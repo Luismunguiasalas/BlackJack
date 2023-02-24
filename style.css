@@ -15,6 +15,10 @@ h1 {
   font-style: italic;
 }
 
+#note {
+  color: rgb(197, 165, 85);
+}
+
 button {
   color: #016f32;
   width: 150px;

@@ -97,8 +97,11 @@ function renderOpponentGame() {
     opponentCards.push(number);
     opponentSum = sum(opponentCards);
   }
-  messageEl.textContent = "You Win! The Opponent Loses!"
-  return
+  if (opponentSum > 21) {
+    messageEl.textContent = "You Win! The Opponent Loses!"
+    opponentCardsEl.textContent = 'Opponent Cards: ' + printCards(opponentCards);
+    opponentSumEl.textContent = 'Opponent Sum: ' + opponentSum;
+  }
 }
 
 /**
